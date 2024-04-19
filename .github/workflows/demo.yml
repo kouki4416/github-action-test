@@ -1,6 +1,8 @@
 name: Test Workflow
 
-on: pull_request
+on:
+  pull_request:
+    types: [opened, ready_for_review]
 
 jobs:
   print-job:
