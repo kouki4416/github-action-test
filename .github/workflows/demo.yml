@@ -1,9 +1,11 @@
 name: Test Workflow
 
-on: pull_request
+on:
+  pull_request:
+    types: [opened, ready_for_review]
 
 jobs:
-  unit-test-job:
+  print-job:
     runs-on: ubuntu-latest
     steps:
       - name: Print Hello
